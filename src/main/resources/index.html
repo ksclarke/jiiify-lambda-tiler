@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OpenSeadragon Demo - IIIF Tiled</title>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.3.1/openseadragon.min.js'></script>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  <style type="text/css">
+    .openseadragon {
+      width: 800px;
+      height: 600px;
+    }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+</head>
+
+<body>
+  <div id="viewer" class="openseadragon"></div>
+  <script type="text/javascript">
+    var viewer = OpenSeadragon({
+      id: "viewer",
+      prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.3.1/images/",
+      tileSources: "{}",
+      showNavigator: true
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%level] %logger{45} | %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Our own loggers -->
+  <logger name="info.freelibrary.util" level="WARN"/>
+  
+  <!-- Not really relevant to the way we're using Vert.x -->
+  <logger name="io.vertx.core.impl.BlockedThreadChecker" level="OFF" />
+
+  <!-- We're going to be explicit about what we don't want to see -->
+  <logger name="org.apache.http.wire" level="WARN" />
+  <logger name="org.apache.http.headers" level="WARN" />
+  <logger name="org.apache.http.impl" level="WARN" />
+  <logger name="org.apache.http.client" level="WARN" />
+  <logger name="com.amazonaws.auth" level="WARN" />
+  <logger name="com.amazonaws.http" level="WARN" />
+  <logger name="com.amazonaws.internal" level="WARN" />
+  <logger name="com.amazonaws.requestId" level="WARN" />
+  <logger name="com.amazonaws.request" level="WARN" />
+  <logger name="com.amazonaws.AmazonWebServiceClient" level="WARN" />
+  <logger name="com.amazonaws.metrics.AwsSdkMetrics" level="WARN" />
+  <logger name="com.amazonaws.services.s3.model.transform" level="WARN" />
+  <logger name="io.netty" level="WARN" />
+
+  <root level="DEBUG">
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+</configuration>

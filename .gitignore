@@ -1,0 +1,8 @@
+# Serverless created directories
+.serverless
+
+# jiiify-lambda-tiler config file
+config.yml
+
+# Test data files
+src/test/resources/images/*.tif

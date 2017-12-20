@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="message-class-name">info.freelibrary.jiiify.lambda.MessageCodes</entry>
+
+  <!-- Messages to be stored in the MessageCodes class -->
+  <entry key="JLT-001">No GET parameters supplied</entry>
+  <entry key="JLT-002">HTTP request missing: {}</entry>
+  <entry key="JLT-003">Failed to find S3 event record information</entry>
+  <entry key="JLT-004">Failed to find S3 event object information</entry>
+  <entry key="JLT-005">New object S3 event: 's3://{}/{}'</entry>
+  <entry key="JLT-006">Bucket '{}' is not configured correctly</entry>
+  <entry key="JLT-007">Writing to a Pairtree S3 bucket: {}</entry>
+  <entry key="JLT-008">Writing to a standard S3 bucket: {}</entry>
+  <entry key="JLT-009">Bucket format was not properly configured</entry>
+  <entry key="JLT-010">{}</entry>
+  <entry key="JLT-011">The IIIF service prefix is not properly configured</entry>
+  <entry key="JLT-012">The default tile size is not properly configured</entry>
+  <entry key="JLT-013">Missing server for image info.json file generation</entry>
+  <entry key="JLT-014">Malformed server URL: {}</entry>
+  <entry key="JLT-015">The bucket for tiles is not properly configured</entry>
+  <entry key="JLT-016">Writing image.info file: {}</entry>
+  
+
+</properties>

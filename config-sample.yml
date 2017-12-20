@@ -1,0 +1,47 @@
+name: jiiify-lambda-tiler
+
+provider:
+  # Stage of deployment: dev, stage, prod
+  stage: "dev"
+  
+  # AWS region in which the lambda and S3 buckets reside
+  region: "us-east-1"
+  
+  # AWS profile with the proper permissions to do things
+  profile: "YOUR_AWS_PROFILE"
+  
+  # Memory Lambda is allowed to use (affects CPU, etc.)
+  memory: 1024
+  
+  # Number of seconds the Lambda function is allowed to run
+  timeout: 300
+
+s3:
+  # The bucket watched for new image uploads
+  sourceBucket: "YOUR_INGEST_BUCKET"
+  
+  # Type of image files to be tiled
+  sourceSuffix: ".tif"
+  
+  # Where tiles are deposited (not created automatically)
+  outputBucket: "YOUR_TILE_BUCKET"
+
+jiiify:
+  # Output can either be 'directory' or 'pairtree'
+  output: "directory"
+  
+  # A IIIF service prefix to use
+  prefix: "YOUR_TILE_BUCKET"
+  
+  # Default tile size in string form
+  tileSize: "1024"
+
+  # Whether or not tiles should be readable by the public
+  tileACL: "public"
+  
+  # The server from which the tiles will be served (may be a server
+  # or an S3 endpoint if files are served directly from the bucket)
+  server: "https://s3.amazonaws.com"
+
+  # Thumbnail sizes (TODO: Replace this with ENV IIIF variable)
+  thumbnails: "200"
