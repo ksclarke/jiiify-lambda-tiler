@@ -12,7 +12,7 @@
 
     <!-- Dependency version properties -->
     <vertx.version>3.4.2</vertx.version>
-    <jackson.version>2.9.2</jackson.version>
+    <jackson.version>2.10.0</jackson.version>
     <aws.s3.version>1.11.191</aws.s3.version>
     <aws.lambda.version>1.1.0</aws.lambda.version>
     <javassist.version>3.21.0-GA</javassist.version>
